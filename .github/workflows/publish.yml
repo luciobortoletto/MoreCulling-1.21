@@ -26,8 +26,6 @@ jobs:
           github-files: build/libs/*-@(dev|sources|api).jar
           version-type: release
           game-version-filter: releases
-          modrinth-featured: true
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           retry-attempts: 2
           retry-delay: 10000
