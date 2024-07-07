@@ -23,7 +23,7 @@ jobs:
       - uses: Kir-Antipov/mc-publish@v3.3
         with:
           files: build/libs/!(*-@(dev|sources|api)).jar
-          github-files: build/libs/*-@(dev|sources|api).jar
+          github-files: build/libs/!(*-@(dev|sources|api)).jar
           version-type: release
           game-version-filter: releases
           github-token: ${{ secrets.GITHUB_TOKEN }}
